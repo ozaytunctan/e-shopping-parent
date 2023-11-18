@@ -1,0 +1,13 @@
+
+#Docker compose yml dosyasında başlatmak için
+> docker-compose up -d
+> docker-compose up -d file_name şeklinde verilebilir.
+
+# Çalışan Docker compose containleri kapatmak ve silmek için
+> docker-compose down
+
+#docker-compuse
+>docker-compose logs -f container_name
+
+#
+>
