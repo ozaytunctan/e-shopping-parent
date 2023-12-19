@@ -13,20 +13,21 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @NoArgsConstructor
-@Document(value = "product")
+@Document(collection = "product")
 public class Product {
 
+
     @Id
-    @Field(name = "id", order = 0)
+    @Field(name = "_id")
     private String id;
 
-    @Field(name = "name", order = 1)
+    @Field(name = "code",order = 1)
+    private String code;
+
     private String name;
 
-    @Field(name = "description", order = 2)
     private String description;
 
-    @Field(name = "price", order = 3)
     private BigDecimal price;
 
 

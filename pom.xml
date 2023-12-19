@@ -33,11 +33,11 @@
         <module>product-service</module>
         <module>order-service</module>
         <module>discovery-server</module>
+        <module>core</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-
             <dependency>
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct</artifactId>
@@ -62,6 +62,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.otunctan</groupId>
+                <artifactId>core</artifactId>
+                <version>${revision}</version>
             </dependency>
 
         </dependencies>

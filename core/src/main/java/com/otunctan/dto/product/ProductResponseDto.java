@@ -1,4 +1,4 @@
-package com.otunctan.dto;
+package com.otunctan.dto.product;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,11 +9,13 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @NoArgsConstructor
-public class CreateProductResponseDto {
+public class ProductResponseDto {
 
     private String id;
 
     private String name;
+
+    private String code;
 
     private String description;
 
